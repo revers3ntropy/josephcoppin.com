@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+* {
+    font-family: 'Nunito';
+}
+
+.link {
+    color: #4e4e4e;
+    transition: 200ms;
+}
+
+.link:hover {
+    color: #000000;
+}

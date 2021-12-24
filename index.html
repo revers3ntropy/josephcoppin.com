@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Joseph Coppin</title>
+    <meta name="viewport" content="width=device-width">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Nunito');
+
+        :root {
+            --bg-1: rgb(255, 255, 255);
+            --bg-2: rgb(230, 230, 230);
+
+            --accent: rgb(150, 150, 150);
+            --accent-2: rgb(180, 180, 180);
+            --text-colour: rgb(30, 30, 30);
+
+            --border-r: 3px;
+
+            --speed: 100ms;
+        }
+
+        body {
+            font-family: 'Nunito', serif;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        svg {
+            fill: var(--text-colour);
+        }
+
+        .icon-button svg {
+            width: calc(var(--nav-size) * 0.5);
+            height: calc(var(--nav-size) * 0.5);
+            transition: var(--speed);
+        }
+
+        .icon-button:hover svg, .link:hover svg {
+            transform: scale(1.15);
+        }
+
+        .link {
+            color: #707070;
+            transition: var(--speed);
+        }
+
+        .link:hover {
+            color: black;
+        }
+
+        #cv {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="margin-left: 10vw">
+        <p class="fill_page" style="
+            text-align: left;
+            margin-bottom: 0;
+            font-size: 70px;
+            animation: fromLeft ease 2s;
+        ">
+            <span style="animation: fadeIn 1.5s">H</span><!--
+        --><span style="animation: fadeIn 1.5s">i</span>
+        </p>
+
+        <p class="page_title" style="
+            text-align: left;
+            margin-top: 10px;
+            font-size: 30px;
+            animation: fadeIn ease 5s, longFromRight 2s;
+        ">
+            I'm Joseph Coppin
+        </p>
+
+        <p style="
+            text-align: left;
+            animation: fadeIn ease 5s, fromBottom 2s;
+        ">
+            Also see my other sites,
+            <a href="https://revers3ntropy.com" class="link">
+                revers3ntropy.com
+            </a>
+            and
+            <a href="https://entropyengine.dev" class="link">
+                entropygames.io
+            </a>
+        </p>
+    </div>
+    <div id="cv">
+        <iframe src="./myCV/myCV.html"></iframe>
+        <script>
+            const iframe = document.querySelector('iframe');
+			const container = document.getElementById('cv');
+
+			iframe.onload = () => {
+				container.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+				console.log(container.style.height);
+            };
+
+        </script>
+    </div>
+</body>
+</html>

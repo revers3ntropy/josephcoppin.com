@@ -1,0 +1,183 @@
+<div id="menu">
+    <style scoped>
+
+        ul {
+            list-style-type: none;
+            overflow: hidden;
+            text-align: center;
+
+            background-color: rgba(255, 255, 255, 0);
+            border-style: solid;
+            border-color: rgba(225, 225, 225, 0);
+            border-width: 2px;
+            border-radius: 0px 0px 10px 10px;
+
+            padding: 0px;
+            margin: 0px 15px 15px;
+
+            display: flex;
+            justify-content: center;
+
+            animation: fromTop 0.5s;
+
+        }
+
+        li {
+            float: left;
+        }
+
+        li a, .dropbtn {
+            display: inline-block;
+            color: rgba(0, 0, 0, 1);
+            text-align: center;
+            padding: 20px 18px 8px 18px;
+            text-decoration: none;
+            margin: 0px;
+
+            border-radius: 0px 0px 10px 10px;
+
+            border: 1px solid rgba(255, 255, 255, 0);
+            border-top-style: none;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        li a:hover, .dropdown:hover .dropbtn {
+            border-color: rgba(0, 0, 0, 0.06);
+            background-color: rgba(0, 0, 0, 0.04);
+        }
+
+        @keyframes hoverOverButton {
+            0% {
+                border-color: rgba(255, 255, 255, 0);
+                background-color: rgba(255, 255, 255, 0.9);
+            }
+            100% {
+                border-color: rgba(0, 0, 0, 0.06);
+                background-color: rgba(0, 0, 0, 0.04);
+            }
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+
+            /* colour of the drop-down box */
+            background-color: rgba(200, 200, 200, 0.05);
+
+            width: 125px;
+
+            border-radius: 10px;
+
+            /* keeps it always on top */
+            z-index: 1;
+
+            animation: dropDownAnimation ease 0.2s;
+        }
+
+        @keyframes dropDownAnimation {
+          0% {
+            transform: translateY(-50px);
+            opacity: 0;
+          }
+          100% {
+            transform: translateY(0px);
+            opacity: 1;
+          }
+        }
+
+        .dropdown-content a {
+            /* colour of text in drop-down menu */
+            display: block;
+            text-align: left;
+            border-style: none;
+
+            text-decoration: none;
+            box-shadow: 0 0 6px 2px rgba(0,0,0,0.03);
+            border-radius: 10px;
+
+            padding: 8px 18px 8px 18px;
+        }
+
+
+        .dropdown-content a:hover {
+            /* hover colour of button in drop-down menu */
+            box-shadow: 0 0 8px 2px rgba(0,0,0,0.1);
+            border-style: none;
+
+            animation: hoverOverButton 0.5s;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+
+            /* keeps it always on top */
+            z-index: 2;
+        }
+
+        p.menu-button{
+            font-variant: "Extra-light 200";
+            font-size:    15px;
+            color:        rgb(0, 0, 0);
+            line-height:  30%;
+        }
+
+        .dev-button {
+            background-color:rgba(240, 240, 240, 0.9);
+        }
+
+        a.sign-out{
+            box-shadow: 0px 0px 8px 2px rgba(255,0,0,0.15);
+        }
+
+        a.sign-out:hover{
+            box-shadow: 0px 0px 8px 5px rgba(255,0,0,0.3);
+        }
+
+    </style>
+
+    <link rel='stylesheet' id="menu-stylesheet">
+
+    <ul>
+        <li>
+            <a href="https://josephcoppin.com">
+                <b>
+                    <p class="menu-button">
+                        Home
+                    </p>
+                </b>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://josephcoppin.com/cv">
+                <p class="menu-button">
+                    My CV
+                </p>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://josephcoppin.com/cv">
+                <p class="menu-button">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </p>
+            </a>
+        </li>
+
+        <script>
+            document.getElementById('forgot').href += localStorage.id;
+
+            if (localStorage.darkMode == 1){
+                document.getElementById("stylesheet").href = "https://josephcoppin.com/darkMode.css"
+                document.getElementById("menu-stylesheet").href = "https://josephcoppin.com/darkModeMenu.css";
+            }else{
+                document.getElementById("stylesheet").href = "https://josephcoppin.com/lightMode.css"
+            }
+
+        </script>
+    </ul>
+</div>
