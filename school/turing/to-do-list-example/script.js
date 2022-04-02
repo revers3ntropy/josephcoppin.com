@@ -48,7 +48,7 @@ class Item {
 let toDoItems = [];
 window.onload = () => {reRender(toDoItems)};
 
-function doUndoItem (id) {
+window.doUndoItem = (id) => {
     // called when the tick-box on the item is pressed
     toDoItems[id].onClickEvent();
     reRender(toDoItems);

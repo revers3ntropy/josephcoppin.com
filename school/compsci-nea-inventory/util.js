@@ -41,7 +41,7 @@ function secondsToReadable (seconds) {
  * @param {Number} time
  * @return {string} - for example, '3 weeks'
  */
-function unixTimeAgo (time) {
+window.unixTimeAgo = (time) => {
 	return secondsToReadable(
 		Math.round(
 			new Date().getTime() / 1000
