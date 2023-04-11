@@ -1,4 +1,12 @@
-.idea
-.htaccess
-error_log
-node_modules
+.idea/
+
+/dist/.htaccess
+/dist/error_log
+
+node_modules/
+
+/cv/public/build/
+
+.DS_Store
+
+package-lock.json
