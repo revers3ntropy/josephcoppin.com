@@ -2,49 +2,32 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>
-            404-error
-        </title>
-
+        <title>404 | Joseph Coppin</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel='stylesheet' href='../../style.css'>
         <link rel='stylesheet' id="stylesheet">
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-LT3NL1PZQ9"></script>
-        <script src="../../util.js"></script>
-
-        <script>
-            $(function(){$("#menu").load("../../main-menu.html");});
-            $(function(){$("#footer").load("../../footer.html");});
-        </script>
     </head>
+    <body>
 
-    <body><div id="menu"></div>
-        <div class="page" id="page">
+    <div class="page" id="page">
 
-            <p class='warning'>
-                ERROR 404
-            </p>
-            <p class="page_title">
-                Sorry, looks like that page can't be found
-            </p>
-            <p class='text'>
-                Make sure you spelled the URL correctly
-            </p>
+        <p class='warning'>
+            ERROR 404
+        </p>
+        <p class="page_title">
+            Sorry, looks like that page can't be found
+        </p>
+        <p class='text'>
+            Make sure you spelled the URL correctly
+        </p>
 
-            <a class="button" href="index.html">
-                Home
-            </a>
+        <a class="button" href="index.html">
+            Home
+        </a>
 
-            <br><br><br><br>
-            <br><br><br><br>
-            <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br>
 
-        </div>
-        <div id='footer'></div>
-    </body>
+    </div>
 </html>
-
-<script>
-
-</script>
