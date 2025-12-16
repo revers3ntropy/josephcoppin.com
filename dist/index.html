@@ -283,11 +283,6 @@
                     Some of its features include a powerful type system, anonymous and first-class functions,
                         classes, and operator overloading.
                 </p>
-                <p>
-                    I had previously created
-                    <a href="https://github.com/revers3ntropy/entropy-script" target="_blank">Entropy Script</a>
-                    an interpreted language with run-time type checking, written in TypeScript, and which inspired Oxynium.
-                </p>
             </div>
             <div>
                 <h2 class="flex items-center">
@@ -362,9 +357,7 @@
                 Awarded the Computer Science subject prize in 2022 and 2023, and Academic Prize 2021.
             </p>
             <p>
-                Ran the Turing Club, a weekly club for students to learn about Computer Science, in 2021 and 2022,
-                and managed the
-                <a href="https://github.com/Kings-Ely" target="_blank"> King's Ely GitHub page</a>.
+                Ran the Turing Club, a weekly club for students to learn about Computer Science, in 2021 and 2022.
             </p>
             <p>
                 Achieved 57 points in the TCS Oxford Computing Challenge 2022: distinction and gold awards,
@@ -372,14 +365,6 @@
             </p>
             <p>
                 Participated in 2020-22 STEM-themed Erasmus Exchange; won best design award for a wind turbine.
-            </p>
-            <p>
-                Completed Duke of Edinburgh Bronze: learning Esperanto, volunteering at a chess club,
-                volunteering at school photography club.
-            </p>
-            <p>
-                Created a realtime quiz app used in the annual school quiz competition.
-                <a href="https://github.com/Kings-Ely/quiz" target="_blank">Repo</a>
             </p>
         </section>
 
@@ -434,10 +419,23 @@
             <h2 class="-tracking-tighter pb-0 pt-12"> COURSEWORK </h2>
 
             <div class="pt-8">
+                <p class="font-extrabold pb-1"> (CS349) Programming Languages Report: Oxynium [2025] </p>
+                Wrote a <a href="./oxynium-essay.pdf" target="_blank">report</a>
+                <i>'Oxynium: Generics, Immutability, and the False Dichotomy Between Abstraction and Performance'</i>
+                analyzing how highly abstract languages can be efficient, in the context of two key features of Oxynium.
+            </div>
+
+            <div class="pt-8">
                 <p class="font-extrabold pb-1"> (CS325) Mini-C Compiler [2025] </p>
                 <p class="text-coolgray-700 text-sm"> C++, LLVM </p>
-                Implemented a modular compiler for the Mini-C language in C++ that features a recursive-descent LL(1)
-                parser, comprehensive semantic analysis, and an LLVM IR code generation backend.
+                Implemented a compiler for a simplified C-like language in C++ that features a recursive-descent LL(1)
+                parser, comprehensive semantic analysis, and uses LLVM IR code for the backend.
+            </div>
+
+            <div class="pt-8">
+                <p class="font-extrabold pb-1"> (CS342) Calibration and Multicalibration of Naive Bayes Classifiers [2025] </p>
+                <p class="text-coolgray-700 text-sm"> Python, Numpy, PyTorch, scikit-learn </p>
+                Investigated the use of calibration and multi-calibration techniques on Bayes Classification ML models.
             </div>
 
             <div class="pt-8">
@@ -462,28 +460,6 @@
                 implementing a normalized database schema, ACID-compliant transactions for ticket sales,
                 and complex SQL queries for financial analytics.
             </div>
-
-            <div class="pt-8">
-                <p class="font-extrabold pb-1"> (CS259) TPTP Language Parser & Interpreter [2025] </p>
-                <p class="text-coolgray-700 text-sm"> Java, JavaCC </p>
-                Designed and implemented a parser and interpreter for a custom domain-specific language using Java and
-                JavaCC, featuring Abstract Syntax Tree (AST) construction, static analysis for algorithmic simplicity,
-                and a runtime execution engine with loop detection.
-            </div>
-
-            <div class="pt-8">
-                <p class="font-extrabold pb-1"> (CS262) Propositional Logic Theorem Prover [2025] </p>
-                <p class="text-coolgray-700 text-sm"> Prolog </p>
-                Implemented a resolution-based theorem prover in Prolog for propositional logic,
-                featuring a custom formula parser and an automated conversion engine that transforms complex logical
-                expressions into Conjunctive Normal Form (CNF) for validity verification.
-            </div>
-
-            <div class="pt-8">
-                <p class="font-extrabold pb-1"> (GCSE Computer Science) Flight System [2021]  </p>
-                <p class="text-coolgray-700 text-sm"> Python </p>
-            </div>
-
         </section>
         <section>
             <h2 class="-tracking-tighter pt-12 pb-0"> OTHER PROJECTS </h2>
@@ -492,6 +468,13 @@
                 <p class="font-extrabold pb-1"> Family Tree [2025] </p>
                 <p class="text-coolgray-700 text-sm pb-2"> HTML, Tailwind, JS </p>
                 Visualizer for my own extended family tree.
+                <div class="pt-2">
+                    <img
+                        src="lib/assets/family-tree.png"
+                        alt="family tree"
+                        class="w-[300px] rounded border border-solid"
+                    >
+                </div>
             </div>
 
             <div class="pt-8">
@@ -543,6 +526,13 @@
                     <a href="https://revers3ntropy.com/ess/sorting/" target="_blank">Try Online</a>;
                     <a href="https://github.com/revers3ntropy/sorting" target="_blank">GitHub</a>
                 </p>
+                <div class="">
+                    <img
+                        src="lib/assets/sort-visual.png"
+                        alt="sorting algorithm visualiser"
+                        class="w-[300px] rounded border border-solid"
+                    >
+                </div>
             </div>
 
             <div class="pt-8">
@@ -551,34 +541,89 @@
                 <p class="pt-2">
                     <a href="https://revers3ntropy.com/games/wordle" target="_blank">Try Online</a>
                 </p>
+                <div class="">
+                    <img
+                        src="lib/assets/wordle.png"
+                        alt="wordle clone"
+                        class="w-[300px] rounded border border-solid"
+                    >
+                </div>
             </div>
 
             <div class="pt-8">
                 <p class="font-extrabold pb-1"> Dash [2021]</p>
                 <p class="text-coolgray-700 text-sm pb-2"> Unity, C# </p>
+                'Endless runner' game made with Unity.
                 <p class="pt-2">
                     <a href="https://revers3ntropy.com/games/dash/play/" target="_blank">Try Online</a>
                 </p>
+                <div class="">
+                    <img
+                        src="lib/assets/dash.png"
+                        alt="Dash"
+                        class="w-[300px] rounded border border-solid"
+                    >
+                </div>
             </div>
 
             <div class="pt-8">
                 <p class="font-extrabold pb-1"> Promptalizer [2021] </p>
                 <p class="text-coolgray-700 text-sm pb-2"> HTML, JS, CSS </p>
-            </div>
-
-            <div class="pt-8">
-                <p class="font-extrabold pb-1"> Entropy Engine [2021] </p>
-                <p class="text-coolgray-700 text-sm pb-2"> Typescript </p>
+                Generate (human) prompts for creative writing.
+                <p class="pt-2">
+                    <a href="https://promptalizer.com/" target="_blank">Try Online</a>;
+                    <a href="https://github.com/revers3ntropy/promptalizer" target="_blank">GitHub</a>
+                </p>
+                <div class="">
+                    <img
+                        src="lib/assets/promptalizer.png"
+                        alt="promptalizer"
+                        class="w-[300px] rounded border border-solid"
+                    >
+                </div>
             </div>
 
             <div class="pt-8">
                 <p class="font-extrabold pb-1"> Circuits [2022] </p>
                 <p class="text-coolgray-700 text-sm pb-2"> Svelte, JS </p>
+                Sandbox for simulating logic gates and more complex circuits.
+                <p class="pt-2">
+                    <a href="https://revers3ntropy.com/ess/circuits/" target="_blank">Try Online</a>;
+                    <a href="https://github.com/revers3ntropy/circuits" target="_blank">GitHub</a>
+                </p>
+                <div class="">
+                    <img
+                        src="lib/assets/circuits.png"
+                        alt="circuits"
+                        class="w-[300px] rounded border border-solid"
+                    >
+                </div>
+            </div>
+
+            <div class="pt-8">
+                <p class="font-extrabold pb-1"> Entropy Engine [2021] </p>
+                <p class="text-coolgray-700 text-sm pb-2"> Typescript </p>
+                HTML5-based Game Engine for the web.
+                <p class="pt-2">
+                    <a href="https://www.npmjs.com/package/entropy-engine" target="_blank">NPM</a>;
+                    <a href="https://github.com/revers3ntropy/entropy-engine" target="_blank">GitHub</a>
+                </p>
             </div>
 
             <div class="pt-8">
                 <p class="font-extrabold pb-1"> Chaos [2020] </p>
                 <p class="text-coolgray-700 text-sm pb-2"> Python, Pygame </p>
+                2D procedurally generated open world game with infinite interactable blocky world, and inventory system.
+                <p class="pt-2">
+                    <a href="https://github.com/revers3ntropy/chaos_v1" target="_blank">GitHub</a>
+                </p>
+                <div class="">
+                    <img
+                        src="lib/assets/chaos.png"
+                        alt="chaos"
+                        class="w-[300px] rounded border border-solid"
+                    >
+                </div>
             </div>
         </section>
     </div>
